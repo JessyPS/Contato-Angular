@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+// Classe deve comandar toda a aplicação
 export class AppComponent {
-  title = 'contato';
+// Atributo
+  title:string = 'Lista de Contatos';
+
+  constructor(){
+    console.log(`Construindo a apliação ${this.title}`)
+  }
 }
